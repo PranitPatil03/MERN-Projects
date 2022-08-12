@@ -6,6 +6,7 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const fetchuser= require('../middleware/fetchuser.js')
 
+
 //This route create New User
 
 router.post('/createUser',[
