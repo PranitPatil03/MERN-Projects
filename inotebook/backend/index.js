@@ -1,9 +1,11 @@
 const connectToDadatabase = require('./db')
 const express = require('express')
+var cors = require('cors')
 
 connectToDadatabase()
 
 const app = express()
+app.use(cors())
 
 const port = 8000
 

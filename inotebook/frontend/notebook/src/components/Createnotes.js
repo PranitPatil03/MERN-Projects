@@ -6,13 +6,13 @@ import noteContext from '../context/notes/NoteContext'
 function Createnotes() {
 
     const context = useContext(noteContext)
-    const {CreateNote} = context
+    const {createNote} = context
 
     const [note,setNotes]=useState({title:"",description:"",tags:""})
 
     const handleClick=(e) =>{
         e.preventDefault()
-        CreateNote(note.title,note.description,note.tags)
+        createNote(note.title,note.description,note.tags)
     }
     const handleChange=(e)=>{
         setNotes({...note,[e.target.name]:e.target.value})
@@ -34,7 +34,7 @@ function Createnotes() {
                     <label htmlFor="tag" className="form-label">Tag</label>
                     <input type="text" className="form-control" id="tag" name="tag" onChange={handleChange}/>
                 </div>
-                <button type="submit" className="btn btn-primary" onClick={handleClick}>Submit</button>
+                <button type="submit" className="btn btn-primary" onClick={handleClick}>Create New Note</button>
             </form>
         </div>
     )
