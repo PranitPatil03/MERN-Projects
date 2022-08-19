@@ -24,7 +24,7 @@ export default function Navbar() {
                                 <Link className={`nav-link ${location.pathname==="/" ? "active":""}`} aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`nav-link ${location.pathname==="/note" ? "active":""}`} aria-current="page" to="/note">Note</Link>
+                                <Link className={`nav-link ${location.pathname==="/notes" ? "active":""}`} aria-current="page" to="/notes">Notes</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className={`nav-link ${location.pathname==="/about" ? "active":""}`} to="/about">About</Link>

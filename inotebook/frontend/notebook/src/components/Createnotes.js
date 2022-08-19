@@ -8,11 +8,11 @@ function Createnotes() {
     const context = useContext(noteContext)
     const {createNote} = context
 
-    const [note,setNotes]=useState({title:"",description:"",tags:""})
+    const [note,setNotes]=useState({title:"",description:"",tag:""})
 
     const handleClick=(e) =>{
         e.preventDefault()
-        createNote(note.title,note.description,note.tags)
+        createNote(note.title,note.description,note.tag)
     }
     const handleChange=(e)=>{
         setNotes({...note,[e.target.name]:e.target.value})
