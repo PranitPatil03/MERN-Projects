@@ -53,13 +53,12 @@ router.post('/createnotes', fetchuser,[
 
 router.put('/updatenote/:id', fetchuser,async (req, res) => {
 
-    const {_id,title, description,tag}=req.body;
+    const {title, description,tag}=req.body;
 
     try {
         
     const newNote={};
     
-    if(_id){newNote._id=_id}
     if(title){newNote.title=title}
     if(description){newNote.description=description}
     if(tag){newNote.tag=tag}
