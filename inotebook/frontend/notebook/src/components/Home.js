@@ -1,11 +1,13 @@
 import React from 'react'
 import Notes from './Notes'
+import Alert from '.components/Alert'
+
 
 export const Home = () => {
 
   return (
     <div>
-      <Notes />
+      <Notes showAlert={showAlert} />
     </div>
   )
 }

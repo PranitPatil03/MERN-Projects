@@ -3,7 +3,7 @@ import noteContext from '../context/notes/NoteContext'
 import Createnotes from './Createnotes'
 import Noteitem from './Noteitem'
 
-function Notes() {
+function Notes(props) {
     const context = useContext(noteContext)
 
     // eslint-disable-next-line no-unused-vars
