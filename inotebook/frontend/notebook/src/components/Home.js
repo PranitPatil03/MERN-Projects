@@ -7,7 +7,7 @@ export const Home = () => {
 
   return (
     <div>
-      <Notes showAlert={showAlert} />
+      <Notes />
     </div>
   )
 }
