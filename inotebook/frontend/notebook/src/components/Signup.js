@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'; // version 5.2.0
-
+import { useNavigate } from 'react-router-dom';
 
 function Signup() {
-  const navigate = useNavigate()
   const [credentials, setCredentials] = useState({ name: "", email: "", password: "", cpassword: "" })
+  const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -49,7 +48,6 @@ function Signup() {
           <label htmlFor="cpassword" className="form-label">Confirm Password</label>
           <input type="password" className="form-control" onChange={onChange} value={credentials.cpassword} name="cpassword" id="cpassword" />
         </div>
-
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
     </div>
