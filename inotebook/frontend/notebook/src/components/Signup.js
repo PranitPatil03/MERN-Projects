@@ -18,8 +18,8 @@ function Signup() {
     const json = await response.json()
     console.log("auth-token --> " + json.authtoken);
     if(json.success){
-      localStorage.setItem('token', json.authtoken)
-      navigate('/')
+      localStorage.setItem('token', json.token)
+      navigate('/login')
     }else{
       alert("Invaild Credentials")
     }
