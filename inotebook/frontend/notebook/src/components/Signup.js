@@ -16,7 +16,7 @@ function Signup() {
       body: JSON.stringify({ name, email, password })
     });
     const json = await response.json()
-    console.log(json);
+    console.log("auth-token --> " + json.authtoken);
     if(json.success){
       localStorage.setItem('token', json.token)
       navigate('/login')
